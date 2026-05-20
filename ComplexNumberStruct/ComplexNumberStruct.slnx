@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../ComplexNumberStruct.Tests/ComplexNumberStruct.Tests.csproj" />
+  <Project Path="ComplexNumberStruct.csproj" />
+</Solution>
