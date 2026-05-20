@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace CommodityLibrary
 {
-    public class Commodity
+    public class Commodity : IComparable<Commodity>
     {
         public readonly string Article;
 
@@ -69,6 +69,13 @@ namespace CommodityLibrary
                       $"Остаток: {StockQuantity.ToString(CultureInfo.InvariantCulture)} {unitName}.";
 
             return info;
+
+        }
+        public int CompareTo(Commodity other)
+        {
+            if (other is null) return 1;
+
+            return string.Compare(this.Article, other.Article, StringComparison.Ordinal);
         }
     }
 }

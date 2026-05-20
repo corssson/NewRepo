@@ -33,7 +33,7 @@ namespace CommodityLibrary.UnitTests
             Assert.That(info.Length, Is.EqualTo(3));
 
             // Проверяем наличие текста (без учёта формата чисел)
-            StringAssert.Contains("Габариты", info[2]);
+            Assert.That(info[2], Does.Contain("Габариты"));
 
             // Проверяем хотя бы одно число (не важно, с точкой или запятой)
             Assert.That(info[2], Does.Match("1[.,]8"));  // проверит и "1.8" и "1,8"
