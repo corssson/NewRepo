@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="../CommodityLibrary.UnitTests/CommodityLibrary.UnitTests.csproj" Id="0b28c783-2bfd-4c8a-8660-4e86ee609373" />
   <Project Path="../task13.NUnitTests/task13.NUnitTests.csproj" Id="0c9a5fef-74f2-4a0a-b9d8-e515a470c282" />
   <Project Path="task13.csproj" Id="c75122d8-d8d5-4fca-803f-99233fdc26af" />
 </Solution>
